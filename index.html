@@ -1,0 +1,232 @@
+<!DOCTYPE html><!--последняя версия HTML-->
+<html lang="en"><!--основной язык документа-->
+<head>
+    <meta charset="UTF-8"><!--кодировка-->
+    <title>HTML Basics</title>
+    
+    
+    
+    <link rel="shortcut icon" href="html-512.ico" type = "image/x-icon">
+    
+    <link rel ="apple-touch-icon" sizes="" href=""><!--картинки для разных дисплеев-->
+
+    <meta name="author" content="Mimi"><!--для SEO-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--для мобилок-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--обычно не нужно, для древних-->
+
+    <link rel="stylesheet" href="styles.css"><!--CSS-->
+
+    <!--Fonts-->
+    <!--Css or down-->
+    <link href = "" rel = "stylesheet">
+</head>
+<body>
+    <!--Существуют условные комментарии-->
+    <!--Валидаторы на базовом уровне важны, у опытных не полезно-->
+
+    <!--Куча семантических тегов: 
+        div span 
+        header nav article footer-->
+    <!--скрипты в конце HTML-->
+    <!--<script src="main.js"></script>-->
+    <!--Не стоит использовать скрипты в разметке-->
+    <h1>headings</h1>
+    <h2>headings</h2>
+    <h3>headings</h3>
+    <h4>headings</h4>
+    <h5>headings</h5>
+    <h6>headings</h6>
+    <p>Paragraph</p>
+    hr
+    <hr>
+    br
+    B<br>R
+    <hr>
+    <q>
+            Quote
+    </q>
+    <address>Quoterman</address>
+    <blockquote cite="google.com"><p>Очень большая цитата</p></blockquote>
+    <hr>
+    <time>1989-01-26</time>
+    <time datetime = "1989-01-26">My Birthday</time>
+    <hr>
+    <b>Bolid</b><br>
+    <i>Italic</i><br>
+    <b>Не использовать</b> тег tt <tt>Typing text</tt><br>
+    <s>Deleted text</s>
+    <hr>
+
+    <strong>Bolid</strong>
+    <em>Italic</em>
+    <hr>
+
+    <h3>Без форматирования</h3>
+    int k = 10
+        for i in range(k):
+            print(i)
+    <br>
+    <h3>С тегом code</h3>
+    <code>
+int k = 10
+for i in range(k):
+    print(i)
+    </code>
+    <h3>С тегом code и pre</h3>
+    <pre>
+        <code>
+int k = 10
+for i in range(k):
+    print(i)
+        </code>
+    </pre>
+
+<!--Важные для семантики теги
+    small big
+    del ins
+-->
+<h3>H<sub>2</sub>O</h3>
+<hr>
+<h3>X<sup>2</sup> = 9</h3>
+<hr>
+<h1>Списки</h1>
+<ul>
+    <li>1 element</li>
+    <li>2 element</li>
+    <li>3 element</li>
+</ul>
+
+<ol>
+    <li>1 element</li>
+    <li>2 element</li>
+    <li>3 element</li>
+</ol>
+
+<ol start="7">
+    <li>1 element</li>
+    <li>2 element</li>
+    <li>3 element</li>
+</ol>
+
+<ol reversed>
+    <li>1 element</li>
+    <li>2 element</li>
+    <li>3 element</li>
+</ol>
+<!--Можно делать вложенные списки-->
+
+<!--Список определений-->
+<dl>
+    <dt>Tiger</dt>
+        <dd>Cat</dd>
+        <dd>Predator</dd>
+</dl>
+<hr>
+<h1>Вставка изображений</h1>
+
+<ims src="html-512.ico" alt="image">
+
+<!--Чтобы не грузить лишние данные-->
+<picture>
+    <source media="(min-width:1024px)" srcset="">
+    <img src="html-512.ico" alt="image">
+</picture>
+
+<!--Картинки с учетом семантики-->
+<figure>
+    <img src="html-512.ico" alt="No">
+    <figcaption>
+         Caption Image
+    </figcaption>
+</figure>
+<h1>Таблицы</h1>
+<table>
+    <caption>Title</caption>
+    <thead>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+    </thead>
+        <tbody>
+    <tr>
+        <td>Element</td>
+        <td>Element</td>
+        <td>Element</td>
+    </tr>
+    <tr>
+        <td>Element</td>
+        <td>Element</td>
+        <td>Element</td>
+    </tr>
+    <tr>
+        <td>Element</td>
+        <td>Element</td>
+        <td>Element</td>
+    </tr>
+        </tbody>
+    <tfoot>
+        <td>End</td>
+        <td>End</td>
+        <td>End</td>
+    </tfoot>
+</table>
+<hr>
+<!--Объединение строк и столбцов-->
+<table border="1">
+    <caption></caption>
+    <thead></thead>
+    <tbody>
+        <tr>
+            <td>Element</td>
+            <td>Element</td>
+            <td>Element</td>
+        </tr>
+        <tr>
+            <td colspan="3">Element</td>
+
+        </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+<hr>
+<table border="1">
+    <caption></caption>
+    <thead></thead>
+    <tbody>
+        <tr >
+            <td rowspan="2">Element</td>
+            <td>Element</td>
+            <td>Element</td>
+        </tr>
+        <tr>
+            <td>Element</td>
+            <td>Element</td>
+        </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+<hr>
+
+<h1>Ссылки</h1>
+<a href="" target="_blank">Link</a>
+<hr>
+<a href="" download>Download</a>
+<hr>
+<a href="tel:+999-99-99">+999-99-99</a>
+<hr>
+<a href="skype:test">Call</a>
+<hr>
+<a href="mailto:k@mail.ru">k@mail.ru</a>
+<!--<a href="#button">Go to button</a>-->
+<hr>
+<h1>Кнопки</h1>
+<button type="button" autofocus>Button</button>
+<button type="submit">Button</button>
+<button type="reset">Button</button>
+<button type="button" disabled>dont touch</button>
+<hr>
+</body>
+</html>
